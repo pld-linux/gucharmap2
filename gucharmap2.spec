@@ -2,7 +2,7 @@ Summary:	Unicode character map (GTK+ 2 version)
 Summary(pl.UTF-8):	Mapa znaków unikodowych (wersja dla GTK+ 2)
 Name:		gucharmap2
 Version:	3.0.1
-Release:	2
+Release:	3
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gucharmap/3.0/gucharmap-%{version}.tar.bz2
