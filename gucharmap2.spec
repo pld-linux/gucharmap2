@@ -2,7 +2,7 @@ Summary:	Unicode character map (GTK+ 2 version)
 Summary(pl.UTF-8):	Mapa znaków unikodowych (wersja dla GTK+ 2)
 Name:		gucharmap2
 Version:	3.0.1
-Release:	3
+Release:	4
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gucharmap/3.0/gucharmap-%{version}.tar.bz2
@@ -27,8 +27,8 @@ BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.311
 Requires(post,postun):	scrollkeeper
 Requires(post,preun):	GConf2 >= 2.24.0
-Requires:	GConf2 >= 2.24.0
 Requires:	%{name}-libs = %{version}-%{release}
+Requires:	GConf2 >= 2.24.0
 Conflicts:	gucharmap
 # sr@Latn vs. sr@latin
 Conflicts:	glibc-misc < 6:2.7
@@ -86,6 +86,9 @@ Summary:	gucharmap library API documentation (GTK+ 2 version)
 Summary(pl.UTF-8):	Dokumentacja API biblioteki gucharmap (wersja dla GTK+ 2)
 Group:		Documentation
 Requires:	gtk-doc-common
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description apidocs
 gucharmap library API documentation (GTK+ 2 version).
