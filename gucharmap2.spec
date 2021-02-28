@@ -86,9 +86,7 @@ Summary:	gucharmap library API documentation (GTK+ 2 version)
 Summary(pl.UTF-8):	Dokumentacja API biblioteki gucharmap (wersja dla GTK+ 2)
 Group:		Documentation
 Requires:	gtk-doc-common
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 gucharmap library API documentation (GTK+ 2 version).
