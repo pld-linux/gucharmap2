@@ -96,7 +96,7 @@ Dokumentacja API biblioteki gucharmap (wersja dla GTK+ 2).
 
 %prep
 %setup -q -n gucharmap-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__glib_gettextize}
